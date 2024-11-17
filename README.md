@@ -1,27 +1,40 @@
-# TodoApp
+# Angular To-Do List App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+A simple and interactive To-Do List app built with Angular version 18. The app allows users to add, delete, and mark tasks as complete. It uses Angular's components and services to manage the state and UI interactions.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Add new tasks to the to-do list.
+- Mark tasks as completed.
+- Delete tasks from the list.
+- User-friendly interface.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Framework for building the app.
+- **TypeScript**: Language for writing Angular code.
+- **HTML** & **CSS**: For structuring and styling the app.
+- **PrimeNG Framework** : For UI elements and styling the app.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+To run this app locally, follow these steps:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone this repository**:
+   ```bash
+   git clone https://github.com/EvangeliaMoira/01-starting-project-ng
+2. **Navigate to the project folder**:
+-   `cd angular-todo-list`
+3. **Install Node.js and npm** (if not already installed):
+- node -v
+- npm -v
 
-## Running end-to-end tests
+4. **Install the required Angular dependencies**:
+- npm install
+5. **Run the Angular app**:
+- ng serve
+6. **Open your browser** and go to:
+- http://localhost:4200
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+![To-Do List App Demo](/todo-app/todoapp.png)
