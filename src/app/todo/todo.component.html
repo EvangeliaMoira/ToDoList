@@ -1,0 +1,33 @@
+<header>
+  <h2 class="main-title">To-Do List</h2>
+</header>
+<body>
+  <div class="app-div">
+    <div class="flex gap-3">
+      <input type="text" pInputText [(ngModel)]="newTask" placeholder="Add a New Task"/>
+      <div class="flex">
+        <p-calendar 
+            [(ngModel)]="date" 
+            styleClass="h-full"
+            [showIcon]="true" 
+            [showTime]="true"
+            inputId="buttondisplay" 
+            [showOnFocus]="false" appendTo="body" [touchUI]="true" />
+    </div>
+    <p-button (click)="onNewTask()" styleClass="text-white" icon="pi pi-plus-circle" />
+    </div>
+    
+    <div class="tasks-list" *ngIf="tasksArray.length">
+      <ul>
+        @for(newTask of tasksArray; track newTask; let i = $index) {
+        <li>
+          <div class="task-item">
+          <p>TO DO: {{ newTask.nameTask }} - {{newTask.dateTime | date:"dd/MM/YYYY HH:mm"}}</p>
+          <p-button icon="pi pi-trash text-white" [rounded]="true" severity="danger" (onClick)="onRemoveTask(i)" />
+        </div>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+</body>
