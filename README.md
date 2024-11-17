@@ -37,4 +37,4 @@ To run this app locally, follow these steps:
 6. **Open your browser** and go to:
 - http://localhost:4200
 
-![To-Do List App Demo](/todo-app/todoapp.png)
+![To-Do List App Demo](todoapp.png)
